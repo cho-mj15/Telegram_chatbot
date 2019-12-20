@@ -5,7 +5,7 @@ import requests
 
 token = config('TELEGRAM_BOT_TOKEN')
 url = 'https://api.telegram.org/bot'
-ngrok_url = 'https://da571560.ngrok.io'
+paw_url = 'https://chomjj12.pythonanywhere.com/'
 
-data = requests.get(f'{url}{token}/setwebhook?url={ngrok_url}/{token}')
-print(data)
+data = requests.get(f'{url}{token}/setwebhook?url={paw_url}{token}')
+print(data.text)
