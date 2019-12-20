@@ -25,6 +25,15 @@ def send():
     requests.get(f'{url}{token}/sendmessage?chat_id={chat_id}&text={text}')
     return render_template("send.html")
 
+ @app.route(f'/{token}', methods=["POST"])
+ def telegram():
+     #chat_id = request.get_json.
+          return "ok", 200
+
+
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
